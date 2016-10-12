@@ -51,7 +51,7 @@ public class Folder implements Comparable<Folder>,java.io.Serializable{
 	public List<Note> searchNotes(String keywords){
 		List<Note> l=new ArrayList<Note>();
 		String[] w1=keywords.toLowerCase().split(" ");
-		System.out.println(w1.length);
+		
 		out1:
 		for(Note n:notes){
 			int i=0;
