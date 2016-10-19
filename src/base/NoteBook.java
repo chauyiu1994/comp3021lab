@@ -88,5 +88,13 @@ public class NoteBook implements java.io.Serializable {
 		}
 		return true;
 	}
-    
+    public ArrayList<String> getFolderNames(){
+    	ArrayList<String> s=new ArrayList<String>();
+    	for(Folder f1:folders){
+    		if(!s.contains(f1.getName())){
+    			s.add(f1.getName());
+    		}
+    	}
+    	return s;
+    }
 }

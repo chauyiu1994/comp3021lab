@@ -57,13 +57,15 @@ public class Folder implements Comparable<Folder>,java.io.Serializable{
 			int i=0;
 			while(i<w1.length){
 			    boolean found=false;
-			    while(w1[i+1].equals("or")){
-			    	if(n.contains(w1[i])){
-			    		found=true;
-			    	}
-			        i+=2;
-			        if(i==w1.length-1){
-			        	break;
+			    if(i<w1.length-1){
+			        while(w1[i+1].equals("or")){
+			    	    if(n.contains(w1[i])){
+			    		    found=true;
+			    	    }
+			            i+=2;
+			            if(i==w1.length-1){
+			        	    break;
+			            }
 			        }
 			    }
 			    if(n.contains(w1[i])){
