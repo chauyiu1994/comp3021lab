@@ -15,7 +15,6 @@ public class TextNote extends Note {
 	private static final long serialVersionUID=1L;
 	public TextNote(String title){
 		super(title);
-		
 	}
 	public TextNote(String title,String content){
 		super(title);

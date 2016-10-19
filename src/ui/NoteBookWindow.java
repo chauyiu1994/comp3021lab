@@ -238,8 +238,8 @@ public class NoteBookWindow extends Application {
 		textAreaNote.setMaxSize(450, 400);
 		textAreaNote.setWrapText(true);
 		textAreaNote.setPrefWidth(450);
-		textAreaNote.setPrefHeight(400);
 		
+		textAreaNote.setPrefHeight(400);
 		// 0 0 is the position in the grid
 		grid.add(textAreaNote, 0, 0);
 
