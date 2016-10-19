@@ -29,6 +29,7 @@ public class Note implements Comparable<Note>,java.io.Serializable{
 			return true;
 		}
 		return false;
+		
 	}
 	@Override
 	public int compareTo(Note o){
