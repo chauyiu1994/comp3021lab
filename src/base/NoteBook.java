@@ -98,4 +98,10 @@ public class NoteBook implements java.io.Serializable {
     	}
     	return s;
     }
+    
+    public Folder addFolder(String name){
+    	Folder f=new Folder(name);
+    	folders.add(f);
+    	return f;
+    }
 }
